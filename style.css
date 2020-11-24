@@ -1,0 +1,63 @@
+body {
+    /*Center the body in the document*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Set margin top and bottom*/
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    /*Set the background pattern and its properties*/
+    background-image:url("bg_pattern.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    /*Set the font weight of the body text*/
+    font-weight: 500;
+    
+}
+
+h1{
+    /*Style the H1 heading*/
+    color:palevioletred;
+    text-shadow:2px 2px blueviolet;
+    font-size: 2em;
+    text-align: center;
+}
+
+.container {
+    /*Set the background color and space of the container class*/
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+}
+
+.divFlex {
+    /*Set the margin of flex-box divs to make it easy to see*/
+    margin: 0 2%;
+}
+
+footer{
+    /*Style the footer*/
+    text-align: center;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+/*Set up media to move the Summary Order to the right of the form with large screen*/
+@media (min-width: 980px){
+    /*Set up flex box for Form*/
+    #frmOrder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*Set up width of 2 divs inside flex-box*/
+    .divFlex {
+        width: 45%;
+    }
+    
+}
+
+
